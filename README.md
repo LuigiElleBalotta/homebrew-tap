@@ -9,8 +9,12 @@ your Claude Code sessions, and manages Rizzo Flow / Jev.
 
 ```sh
 brew tap LuigiElleBalotta/tap
+brew trust LuigiElleBalotta/tap
 brew install --cask mcp-hub
 ```
+
+Homebrew 6.0 and later asks you to trust a third-party tap before its code runs: `brew trust` is that
+one-time consent (older Homebrew versions do not have the command; skip it there).
 
 - Installs `mcp-hub-gui.app` in `/Applications` (Apple Silicon or Intel, picked automatically) and removes the
   download quarantine flag (the app is not signed or notarized), so there is no "damaged app" warning.
@@ -24,5 +28,6 @@ The cask follows the latest GitHub release; `scripts/update_cask.py` rewrites th
 ---
 
 Tap di [LuigiElleBalotta](https://github.com/LuigiElleBalotta). Per installare mcp-hub su macOS:
-`brew tap LuigiElleBalotta/tap && brew install --cask mcp-hub`. Aggiornamento: `brew upgrade --cask mcp-hub`
+`brew tap LuigiElleBalotta/tap && brew trust LuigiElleBalotta/tap && brew install --cask mcp-hub`
+(`brew trust` serve da Homebrew 6.0: è il consenso, una tantum, a eseguire il codice della tap). Aggiornamento: `brew upgrade --cask mcp-hub`
 (oppure il pulsante **Installa e riavvia** dell'app). L'app non è firmata: il cask toglie da solo la quarantena.
