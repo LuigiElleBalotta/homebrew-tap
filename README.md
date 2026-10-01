@@ -4,6 +4,8 @@ Homebrew tap of [LuigiElleBalotta](https://github.com/LuigiElleBalotta).
 
 ## mcp-hub (macOS, experimental)
 
+Verified: install with Homebrew and app start-up on an **Intel** Mac. Not verified yet: Apple Silicon.
+
 [mcp-hub](https://github.com/LuigiElleBalotta/mcp-hub) shares one instance of each MCP server between all
 your Claude Code sessions, and manages Rizzo Flow / Jev.
 
