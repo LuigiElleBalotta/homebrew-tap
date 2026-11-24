@@ -1,9 +1,9 @@
 cask "mcp-hub" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "1.2.0"
-  sha256 arm:   "5132ccd5eeda6142117c979a8bd0d02e1aa17a7897d26bedad6f8aeb8e33d4b4",
-         intel: "56174f9db0ce3b4180fe6f651b7854de593d670ed7b033f20f629c96878930b0"
+  version "1.3.1"
+  sha256 arm:   "267d6522e1f334ee9950f47e544a54da96f35aeede55bef2ebde73e626a2f8a8",
+         intel: "4cf4b7adb2fac15ab5dd7ccfee2438215c8107baadce1cff74f2dbfc43bb5362"
 
   url "https://github.com/LuigiElleBalotta/mcp-hub/releases/download/#{version}/mcp-hub-gui-macos-#{arch}.zip"
   name "mcp-hub"
